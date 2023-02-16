@@ -2,6 +2,7 @@ import streamlit as st
 import plotly.express as px
 from backend import get_data
 
+# Create site elements
 st.title("Weather Forecast For the Next 5 Days")
 place = st.text_input("Place: ")
 days = st.slider("Forecast Days:", min_value=1, max_value=5, help="Select the number of forecast days")

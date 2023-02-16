@@ -3,6 +3,7 @@ import requests
 API_KEY = "783ac17e0b57c3264e31e8424474c8de"
 
 
+# Access info from API
 def get_data(place, forecast_days=None):
     url = f"https://api.openweathermap.org/data/2.5/forecast?q={place}&appid={API_KEY}"
     response = requests.get(url)
@@ -15,5 +16,3 @@ def get_data(place, forecast_days=None):
 
 if __name__ == "__main__":
     print(len(get_data(place="Nairobi", forecast_days=3)))
-
-

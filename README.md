@@ -1,0 +1,1 @@
+# This program accesses APIs to generate weather data for the next five days and plots a graph of the acquired information
